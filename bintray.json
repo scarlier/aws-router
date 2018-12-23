@@ -15,10 +15,7 @@
   },
 
   "version": {
-    "name": "0.1",
-    "released": "2018-12-23",
-    "vcs_tag": "0.5",
-    "gpgSign": false
+    "name": "0.1"
   },
 
   "files":
