@@ -1,0 +1,30 @@
+{
+  "package": {
+    "name": "aws-router",
+    "repo": "software",
+    "subject": "scarlier",
+    "website_url": "https://github.com/scarlier/aws-router",
+    "issue_tracker_url": "https://github.com/scarlier/aws-router/issues",
+    "vcs_url": "https://github.com/scarlier/aws-router",
+    "github_use_tag_release_notes": true,
+    "github_release_notes_file": "RELEASE.txt",
+    "licenses": ["MIT"],
+    "labels": ["lambda", "aws", "router"],
+    "public_download_numbers": false,
+    "public_stats": false
+  },
+
+  "version": {
+    "name": "0.1",
+    "released": "2018-12-23",
+    "vcs_tag": "0.5",
+    "gpgSign": false
+  },
+
+  "files":
+  [
+    {"includePattern": "build/libs(.*)*"},
+    {"includePattern": "build/docs/(.*)", "uploadPattern": "docs/$1"}
+  ],
+  "publish": true
+}
