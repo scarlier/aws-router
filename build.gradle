@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+group 'co.carlier.software.router'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //logging
+    compile 'io.symphonia:lambda-logging:1.0.3'
+
+    //aws
+    compile 'com.amazonaws:aws-lambda-java-core:1.2.0'
+    compile 'com.amazonaws:aws-lambda-java-events:2.2.4'
+
+    //json schema validation
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.7'
+
+    //unit test
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
+
+    //annotations NotNull & NullAble / ...
+    compile 'org.jetbrains:annotations:16.0.3'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+wrapper {
+    gradleVersion = '5.0'
+    distributionType = Wrapper.DistributionType.ALL
+}
